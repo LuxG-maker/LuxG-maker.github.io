@@ -1,0 +1,11 @@
+@import '_Variables';
+html{
+    &::-webkit-scrollbar{
+        width: 10px;
+        background-color: $ColorFondoI;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $ColorTitulo;
+        border-radius: 10px;
+    }
+}

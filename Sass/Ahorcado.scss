@@ -1,0 +1,58 @@
+@import '_Variables', '_Scroll', '_Reg';
+body{
+    // text-align:center;
+    font-size: 1,2em;
+    background-color: $ColorFondo;
+    h1{
+        text-align:center;
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
+    }
+    h3{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        font: $FuenteTituloV;
+        color: $ColorNormal;
+    }
+    #dibujoahorcado{
+        margin-bottom: 20px;
+        #canvasahorcado{
+            width:320px;
+            height:250px;
+        }
+     }
+    #letras{
+        font-size: 3em;
+        text-align:center;
+        width: 320px;
+        //clear: both;
+        margin-bottom: 10px;
+        span{
+            width: 30px;
+            text-align:center;
+            padding-left: 5px;
+        }
+    }
+    #botonesletras{
+        width: 330px;
+        //clear: both;
+    }
+ }
+@media screen and (max-width:479px) {
+    body{
+        font-size: 0.8em;
+        #letras{
+            width: 100%;
+        }
+        #botonesletras{
+            width: 100%;
+        }
+        #dibujoahorcado{
+            width: 96%;
+        }
+        #canvasahorcado{
+            width: 100%;
+        }
+    }
+ }

@@ -1,0 +1,2 @@
+html::-webkit-scrollbar{width:10px;background-color:#838082}html::-webkit-scrollbar-thumb{background:#08d9d6;border-radius:10px}#Reg{width:50px;height:50px;font-size:100px;margin:20px 0;position:-webkit-sticky;position:sticky;top:40px;z-index:100}#Reg #R{background-color:#838082;color:#08d9d6;-webkit-transition:.2s;transition:.2s;border-radius:50px}#Reg #R:hover{background-color:#08d9d6;color:#838082}body #disqus_thread{width:90%;margin:auto}body h1{text-align:center;color:#08d9d6;font:25px "Fira Sans",sans-serif}
+/*# sourceMappingURL=Contacto.css.map */

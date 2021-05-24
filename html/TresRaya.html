@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Css/TresRaya.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kiwi+Maru&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shotcut icon" type="Image/x-icon" href="../Multimedia/Icon.png">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/dd6d866d52.js" crossorigin="anonymous"></script>
+
+    <title>Juego Tres en Raya</title>
+</head>
+<body>
+    <header id="Cabeza"></header>
+    <a id="Reg" href="Juega.html"><i id="R" class="fas fa-arrow-circle-left"></i></a>
+	<h1>Tres en raya</h1>
+    <h3>
+        En este juego creado con JavaScrpt debes Ganarle a tu computadora para obtener un punto, Si pierdes se te hara una pregunta de cualquier señal de transito
+    </h3>
+    <br>
+    <div id="resultado"></div>
+    <br><br>
+	<div class="Cont-Canvas">
+        <canvas id="miCanvas">canvas>
+    </div>
+    <p id="Aparece">Este Mini-juego solo esta disponible para computador</p>
+    <br><br>
+    <script>
+        $('#Cabeza').load('Cabeza.html')
+    </script>
+    <script src="../Js/TresRaya.js"></script>
+</body>
+</html>

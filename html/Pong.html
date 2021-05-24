@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Pong.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kiwi+Maru&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shotcut icon" type="Image/x-icon" href="../Multimedia/Icon.png">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/dd6d866d52.js" crossorigin="anonymous"></script>
+    <title>Pong</title>
+</head>
+<body>
+    <header id="Cabeza"></header>
+    <a id="Reg" href="Juega.html"><i id="R" class="fas fa-arrow-circle-left"></i></a>
+    <br><br>
+    <h1>Pong</h1>
+    <h3>El segundo juego basado en destruir los bloques del mapa para ganar y al perder cada vida se realizara una pregunta del tema</h3>
+    <br>
+    <div id="resultado"></div>
+    <canvas id="myCanvas" width="480px" height="320px"></canvas>
+    <br><br>
+    <h6>Este MIni-juego solo esta disponible pára computadora</h6>
+    <button onclick="Game()">INICIAR</button>
+    <br>
+    <script>
+        $('#Cabeza').load('Cabeza.html')
+    </script>
+    <script src="../Js/Pong.js"></script>
+</body>
+
+</html>

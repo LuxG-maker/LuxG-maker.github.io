@@ -1,0 +1,12 @@
+@import '_Variables', '_Scroll', '_Reg';
+body{
+    #disqus_thread{
+        width: 90%;
+        margin: auto;
+    }
+    h1{
+        text-align: center;
+        color: $ColorTitulo;
+        font: $FuenteTituloV;
+    }
+}

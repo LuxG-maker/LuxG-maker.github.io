@@ -1,0 +1,91 @@
+@import '_Variables', '_Scroll';
+.Contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "Header Header"
+                         "article article"
+                         "section section";
+    #Cabeza{
+        grid-area: Header;
+    }
+    article{
+        grid-area: article;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        .T1{
+            display: flex;
+            justify-content: center;
+            h1{
+                font: $FuenteTitulo;
+                color: $ColorTitulo;
+                font-size: 35px;
+                margin: 5px;
+                font-weight: bold;
+            }
+        }
+        .caja1{
+            display: flex;
+            justify-content: center;
+            .mini-division{
+                text-align: center;
+                width: 450px;
+                height: 5px;
+                background-color: $ColorVariante;
+            }
+        }
+        .parra{
+            margin: auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            p{
+                width: 100%;
+                text-align: center;
+                font: $FuenteNormal;
+                color: $ColorNormal;
+            }
+        }
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        grid-area: section;
+        .Boton{
+            a{
+                margin: 15px;
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    #resultado{
+        width: 20px;
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 768px){
+    section{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        grid-area: section;
+        .Boton{
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            a{
+                margin: 20px;
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

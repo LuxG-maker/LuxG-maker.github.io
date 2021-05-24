@@ -1,0 +1,19 @@
+#Reg{
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+    margin: 20px 0;
+    position: sticky;
+    top: 40px;
+    z-index: 100;
+    #R{
+        background-color: $ColorFondoI;
+        color: $ColorTitulo;
+        transition: .2s;
+        border-radius: 50px;
+        &:hover{
+        background-color: $ColorTitulo;
+        color: $ColorFondoI;
+        }
+    }
+}

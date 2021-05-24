@@ -1,0 +1,220 @@
+@import '_Variables', '_Scroll', '_Reg';
+body{
+    h1{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
+    }
+    h3{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        font: $FuenteTituloV;
+        color: $ColorNormal;
+    }
+    #SebreNom{
+        width: 80%;
+        margin: auto;
+        font: $FuenteTitulo;
+        color: #FA1E4E;
+        text-align: center;
+    }
+    article{
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        .poder{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            .colorin10{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: red;
+            }
+            .colorin9{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #E01F27;
+            }
+            .colorin8{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #E43D24;
+            }
+            .colorin7{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #EF8122;
+            }
+            .colorin6{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #F4CF1C;
+            }
+            .colorin5{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #D7DE26;
+            }
+            .colorin4{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #8BC53F;
+            }
+            .colorin3{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #36B44C;
+            }
+            .colorin2{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: #019545;
+            }
+            .colorin1{
+                margin: 10px 80px;
+                width: 100px;
+                height: 25px;
+                background-color: green;
+            }
+        }
+        .Nivel{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            .nivela{
+                color: $ColorTitulo;
+                font: $FuenteVariante;
+                margin: 10px 80px;
+                text-align: right;
+                height: 25px;
+            }
+        }
+    }
+    #Leyenda{
+        width: 80%;
+        margin: auto;
+        font: $FuenteTituloV;
+        color: $ColorNormal;
+        text-align: center;
+    }
+    #Bottton{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 150px;
+            height: 70px;
+            margin: auto;
+            background-color: $ColorFondoI;
+            color: $ColorTitulo;
+            font: $FuenteTituloV;
+            border: none;
+            transition: .3s;
+            border-radius: 30px;
+            outline: none;
+            &:hover{
+                background-color: $ColorTitulo;
+                color: $ColorFondoI;
+            }
+        }
+    }
+    .Titulo{
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
+    }
+    .Texto{
+        font: $FuenteVariante;
+        color: $ColorNormal;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        article{
+            .poder{
+                width: 50%;
+                text-align: center;
+                .colorin10{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: red;
+                }
+                .colorin9{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #E01F27;
+                }
+                .colorin8{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #E43D24;
+                }
+                .colorin7{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #EF8122;
+                }
+                .colorin6{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #F4CF1C;
+                }
+                .colorin5{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #D7DE26;
+                }
+                .colorin4{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #8BC53F;
+                }
+                .colorin3{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #36B44C;
+                }
+                .colorin2{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: #019545;
+                }
+                .colorin1{
+                    margin: 10px 0px;
+                    width: 100px;
+                    height: 25px;
+                    background-color: green;
+                }
+            }
+            .Nivel{
+                width: 50%;
+                text-align: center;
+                .nivela{
+                    margin: 10px 0;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

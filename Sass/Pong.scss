@@ -1,0 +1,63 @@
+@import '_Variables', '_Scroll', '_Reg';
+html{
+    background-color: $ColorFondo;
+    h1{
+        text-align:center;
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
+    }
+    h3{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        font: $FuenteTituloV;
+        color: $ColorNormal;
+    }
+    #resultado{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        font-size: 40px;
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
+    }
+    canvas{
+        background-color: $ColorFondo;
+        display: block;
+        margin: 0 auto;
+    }
+    h6{
+        display: none;
+        font: $FuenteTitulo;
+        color: $ColorNormal;
+        text-align: center;
+    }
+    button{
+        border: none;
+        display: block;
+        background-color: $ColorVariante;
+        text-align: center;
+        width: 30%;
+        height: 50px;
+        margin: auto;
+        transition: .5s;
+        outline: none;
+        font: $FuenteVariante;
+        color: $ColorTitulo;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        canvas{
+            width: 0;
+        }
+        button{
+            display: none;
+            width: 0;
+        }
+        h6{
+            display: block;
+        }
+    }
+}

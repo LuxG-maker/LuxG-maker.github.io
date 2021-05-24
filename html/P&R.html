@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/P&R.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kiwi+Maru&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="shotcut icon" type="Image/x-icon" href="../Multimedia/Icon.png">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/dd6d866d52.js" crossorigin="anonymous"></script>
+
+    <title>P&R</title>
+</head>
+<body>
+    <header id="Cabeza"></header>
+    <a id="Reg" href="Juega.html"><i id="R" class="fas fa-arrow-circle-left"></i></a>
+	<h1>Preguntas & Respuestas</h1>
+    <h3>
+        Este juego de Preguntas y respuestas iniciara al pulsar el boton "Iniciar" Se realizaran 10 preguntas y en base a los conocimientos obtenidos en "Aprende " se le dara un titulo segun su conocimiento.
+    </h3>
+    <div id="SebreNom"></div>
+    <article>
+        <div class="Nivel">
+            <h2 class="nivela">Nivel 10</h2>
+            <h2 class="nivela">Nivel 9</h2>
+            <h2 class="nivela">Nivel 8</h2>
+            <h2 class="nivela">Nivel 7</h2>
+            <h2 class="nivela">Nivel 6</h2>
+            <h2 class="nivela">Nivel 5</h2>
+            <h2 class="nivela">Nivel 4</h2>
+            <h2 class="nivela">Nivel 3</h2>
+            <h2 class="nivela">Nivel 2</h2>
+            <h2 class="nivela">Nivel 1</h2>
+        </div>
+        <div class="poder">
+            <div class="colorin10"></div>
+            <div class="colorin9"></div>
+            <div class="colorin8"></div>
+            <div class="colorin7"></div>
+            <div class="colorin6"></div>
+            <div class="colorin5"></div>
+            <div class="colorin4"></div>
+            <div class="colorin3"></div>
+            <div class="colorin2"></div>
+            <div class="colorin1"></div>
+        </div>
+    </article>
+    <div id="Leyenda"></div>
+    <br>
+    <div id="Bottton">
+        <button id="Inicio" onclick="Preguntas()">Iniciar</button>
+    </div>
+    <br><br>
+    <script>
+        $('#Cabeza').load('Cabeza.html')
+    </script>
+    <script src="../Js/P&R.js"></script>
+</body>
+</html>
