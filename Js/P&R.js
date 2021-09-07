@@ -18,8 +18,10 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
-                text: 'Texto' 
+                text: 'Texto',
+                select: 'popIn' 
             },
             footer: 'Pregunta 1',
             inputValidator: (value) => {
@@ -52,8 +54,10 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
-                text: 'Texto' 
+                text: 'Texto',
+                inputLabel: 'popIn' 
             },
             footer: 'Pregunta 2',
             inputValidator: (value) => {
@@ -86,6 +90,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -121,6 +126,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -155,6 +161,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -190,6 +197,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -224,6 +232,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -245,7 +254,7 @@ function Preguntas(){
         const {value:rta7} = await Swal.fire({
             title: 'Pregunta',
             text: 'Cual es la funcion de esta señal',
-            imageUrl: '../Multimedia/Reglamentarias/st06.jpg',
+            imageUrl: '../Multimedia/Reglamentarias/st06.png',
             imageHeight: 100,
             input: 'select',
             inputPlaceholder: 'Respuesta',
@@ -259,6 +268,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -292,6 +302,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -326,6 +337,7 @@ function Preguntas(){
             allowEscapeKey: false,
             allowEnterKey: false,
             customClass: {
+                popup: 'popFon',
                 title: 'Titulo',
                 text: 'Texto' 
             },
@@ -342,6 +354,8 @@ function Preguntas(){
                 })
             }
         });
+        localStorage.setItem('score', parseInt(puntos));
+        document.getElementById('puntos').innerHTML = localStorage.getItem('score');
         if (puntos >= 9){
             document.getElementById('Leyenda').innerHTML = 'Puntos: ' + puntos + ' Felicidades eres todo un genio';
         }else if (puntos >= 4 && puntos <= 8){
@@ -354,7 +368,7 @@ function Preguntas(){
         }else if (puntos >= 4 && puntos <= 8){
             document.getElementById('SebreNom').innerHTML = 'COMUN';
         }else{
-            document.getElementById('SebreNom').innerHTML = 'LUCKY DOWN';
+            document.getElementById('SebreNom').innerHTML = 'BAJO';
         };
     })();
     

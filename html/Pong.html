@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/dd6d866d52.js" crossorigin="anonymous"></script>
     <title>Pong</title>
+    <script src="../Js/Pong-Sound.js"></script>
 </head>
 <body>
     <header id="Cabeza"></header>
@@ -23,7 +24,9 @@
     <h3>El segundo juego basado en destruir los bloques del mapa para ganar y al perder cada vida se realizara una pregunta del tema</h3>
     <br>
     <div id="resultado"></div>
-    <canvas id="myCanvas" width="480px" height="320px"></canvas>
+    <div id="canv">
+    <canvas></canvas>
+    </div>
     <br><br>
     <h6>Este MIni-juego solo esta disponible pára computadora</h6>
     <button onclick="Game()">INICIAR</button>
@@ -31,7 +34,6 @@
     <script>
         $('#Cabeza').load('Cabeza.html')
     </script>
-    <script src="../Js/Pong.js"></script>
+    <script src="../Js/Pong-2.js"></script>
 </body>
-
 </html>

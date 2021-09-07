@@ -5,12 +5,13 @@
     margin: 20px 0;
     position: sticky;
     top: 40px;
+    left: 2px;
     z-index: 100;
     #R{
-        background-color: $ColorFondoI;
-        color: $ColorTitulo;
+        background-color: $ColorFondo;
+        color: $ColorFondoI;
         transition: .2s;
-        border-radius: 50px;
+        border-radius: 49px;
         &:hover{
         background-color: $ColorTitulo;
         color: $ColorFondoI;

@@ -1,12 +1,70 @@
 @import '_Variables', '_Scroll', '_Reg';
 body{
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
     #disqus_thread{
         width: 90%;
+        height: 800px;
         margin: auto;
+        padding: 20px;
+        border-radius: 70px;
+        font-size: 50px;
     }
+    article{
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(2, auto);
+        grid-template-areas:  "Uno"
+                              "Dos";
+        .a{
+            grid-area: Uno;
+        }
+        .b{
+            grid-area: Dos;
+        }
+        main{
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            flex-flow: nowrap row;
+            div{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                flex-direction: column;
+                img{
+                    margin: auto;
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                }
+                h1{
+                    text-align: center;
+                    font: $FuenteVariante;
+                    font-size: 40px;
+                }
+                p{
+                    text-align: center;
+                    font: $FuenteNormal;
+                    font-size: 30px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+
+
     h1{
         text-align: center;
         color: $ColorTitulo;
-        font: $FuenteTituloV;
+        font: $FuenteTitulo;
     }
 }

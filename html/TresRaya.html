@@ -22,19 +22,50 @@
     <a id="Reg" href="Juega.html"><i id="R" class="fas fa-arrow-circle-left"></i></a>
 	<h1>Tres en raya</h1>
     <h3>
-        En este juego creado con JavaScrpt debes Ganarle a tu computadora para obtener un punto, Si pierdes se te hara una pregunta de cualquier señal de transito
+        Bienvenido al tres en raya o mas conocido cono "Triki" Puedes ganar o perder puntos, eso si necesitas almenos de un punto para poder jugar, si tienes alguna deuda en puntos te recomiendo el preguntas y respuestas
     </h3>
+    <br>
+    <div id="J">
+        <div> Puntos: </div>
+        <div id="puntos"></div>
+    </div>
     <br>
     <div id="resultado"></div>
     <br><br>
-	<div class="Cont-Canvas">
-        <canvas id="miCanvas">canvas>
+    <div id="caja">
+        <table class="tabla" cellpadding="0" cellspacing="0" border="5" bgcolor="white"><tr>
+            <td width="60"><a href="javascript:setbutton(11)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc11"></a></td>
+            <td width="60"><a href="javascript:setbutton(12)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc12"></a></td>
+            <td width="60"><a href="javascript:setbutton(13)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc13"></a></td>
+            </tr><tr>
+            <td width="60"><a href="javascript:setbutton(21)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc21"></a></td>
+            <td width="60"><a href="javascript:setbutton(22)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc22"></a></td>
+            <td width="60"><a href="javascript:setbutton(23)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc23"></a></td>
+            </tr><tr>
+            <td width="60"><a href="javascript:setbutton(31)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc31"></a></td>
+            <td width="60"><a href="javascript:setbutton(32)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc32"></a></td>
+            <td width="60"><a href="javascript:setbutton(33)"><img src="../Multimedia/nothing.gif" alt="" border="0" name="rc33"></a></td>
+            </tr></table>
+            </div><br>
     </div>
+    <br>   
+    <form action="" name="scores">
+        <textarea class="scores2" name="scores2" cols="45" rows="6"></textarea>
+        <br><br>
+        <input type="radio" name="level"  onclick="setlevel(0)">Nivel 0 --  La computadora es totalmente tonta. <br>
+        <input type="radio" name="level"  onclick="setlevel(1)" checked>Nivel 1 --  La computadora es mas inteligente. <br>
+        <input type="radio" name="level"  onclick="setlevel(2)">Nivel 2 --  Puedes ganar (solo si empiezas). <br>
+        <input type="radio" name="level"  onclick="setlevel(3)">Nivel 3 --  La computadora NUNCA pierde. <br>
+        </form>
+    <br>
     <p id="Aparece">Este Mini-juego solo esta disponible para computador</p>
     <br><br>
     <script>
+        function OcultarButton(btn) {
+            $(btn).fadeOut();
+        }  
         $('#Cabeza').load('Cabeza.html')
     </script>
-    <script src="../Js/TresRaya.js"></script>
+    <script src="../Js/Triki.js"></script>
 </body>
 </html>

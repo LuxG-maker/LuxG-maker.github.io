@@ -1,14 +1,58 @@
-@import '_Variables', '_Scroll', '_Reg';
-.Contenedor{
-    height: 511px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    div{
+@import '_Variables', '_Scroll', '_Reg', '_Puntos';
+body{
+    background-color: $ColorFondo;
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            color: $ColorAlert;
+            font: $FuenteTitulo;
+        }
+    }
+    .Contenedor{
+        height: 511px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div{
+            background-color: black;
+            width: 50%;
+            height: 50%;
+            a{
+                text-align: center;
+                float: $FuenteVariante;
+                font-size: 40px;
+                color: $ColorTitulo;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $ColorFondo;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: 0.8s;
+                &:hover{
+                    background-color: $ColorTitulo;
+                    color: $ColorFondo;
+                }
+            }
+        }
+    }
+    .Mas{
         background-color: black;
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height: 120px;
         a{
             text-align: center;
             float: $FuenteVariante;

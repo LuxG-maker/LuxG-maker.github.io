@@ -3,12 +3,18 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: "Header Header"
                          "article article"
-                         "section section";
+                         "boton boton";
     #Cabeza{
         grid-area: Header;
+    }
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -99;
     }
     article{
         grid-area: article;
@@ -25,6 +31,7 @@
                 font-size: 35px;
                 margin: 5px;
                 font-weight: bold;
+                text-align: center;
             }
         }
         .caja1{
@@ -53,14 +60,16 @@
     section{
         display: flex;
         justify-content: space-around;
-        grid-area: section;
-        .Boton{
-            a{
-                margin: 15px;
-                img{
-                    width: 300px;
-                    height: 300px;
-                }
+        grid-area: boton;
+        a{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 15px;
+            img{
+                width: 290px;
+                height: 290px;
             }
         }
     }
@@ -70,20 +79,22 @@
     }
 }
 @media screen and (max-width: 768px){
-    section{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        grid-area: section;
-        .Boton{
+    .Contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "Header Header"
+                             "article article"
+                             "boton boton";
+        section{
             display: flex;
-            align-content: center;
-            flex-direction: column;
+            flex-flow: column nowrap;
+            justify-content: center;
+            grid-area: boton;
             a{
-                margin: 20px;
+                margin: 15px 0px;
                 img{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }

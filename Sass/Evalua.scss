@@ -1,0 +1,93 @@
+@import '_Variables', '_Scroll', '_Reg';
+body{
+    background-color: $ColorFondo;
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    .ini{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        h1{
+            text-align: center;
+            font: $FuenteTitulo;
+            color: $ColorTitulo;
+        }
+        h3{
+            text-align: center;
+            font: $FuenteVariante;
+            color: $ColorNormal;
+        }
+    }
+    .idea{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        #test{
+            margin: auto;
+            width: 49%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            .cuestion{
+                font: $FuenteTituloV;
+                color: $ColorAlert;
+                text-align: center;
+                margin: 70px 0px 50px 0px;
+            }
+            .respuestas{
+                margin: auto;
+                align-items: center;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                flex-flow: row wrap;
+                font: $FuenteVariante;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+                color: $ColorNormal;
+                label{
+                    margin: 0px 20px;
+                }
+            }
+        }
+        #image{
+            display: flex;
+            justify-content: center;
+            width: 49%;
+            margin: auto;
+            img{
+                width: 300px;
+            }
+        }
+    }
+    #boton{
+        border: none;
+        display: block;
+        background-color: $ColorVariante;
+        text-align: center;
+        width: 30%;
+        height: 50px;
+        margin: auto;
+        transition: .5s;
+        outline: none;
+        font: $FuenteVariante;
+        color: $ColorAlert;
+        border-radius: 20px;
+    }
+    #resultado{
+        color: black;
+        font: $FuenteVariante;
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-weight: bold;
+    }
+}

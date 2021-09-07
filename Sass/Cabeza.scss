@@ -1,5 +1,6 @@
 @import '_Variables';
 #Cabeza{
+    margin: auto;
     width: 100%;
     background-color: $ColorFondoI;
     box-shadow: 1px 5px 15px black;
@@ -8,7 +9,7 @@
     align-items: center;
     justify-content: space-around;
     .Logo{
-        width: 35%;
+        width: 30%;
         display: flex;
         justify-content: center;
         img{
@@ -16,7 +17,7 @@
         }
     }
     nav{
-        width: 63%;
+        width: 69%;
         display: flex;
         align-items: center;
         .Padre{

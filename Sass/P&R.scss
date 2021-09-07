@@ -1,4 +1,4 @@
-@import '_Variables', '_Scroll', '_Reg';
+@import '_Variables', '_Scroll', '_Reg', '_Puntos';
 body{
     h1{
         text-align: center;
@@ -20,6 +20,15 @@ body{
         font: $FuenteTitulo;
         color: #FA1E4E;
         text-align: center;
+    }
+    .M{
+        display: flex;
+        justify-content: center;
+        div{
+            text-align: center;
+            color: black;
+            font: $FuenteTitulo;
+        }
     }
     article{
         width: 80%;
@@ -139,7 +148,28 @@ body{
         font: $FuenteVariante;
         color: $ColorNormal;
     }
+    .swal2-styled.swal2-confirm{
+        font: $FuenteVariante;
+        color: $ColorTitulo;
+        background-color: $ColorFondoI;
+        background: $ColorFondoI;
+        border: none;
+    }
+    .swal2-select{
+        color: $ColorTitulo;
+        &:focus{
+            border: 3px solid $ColorAlert;
+            box-shadow: none;
+        }
+    }
+    .popFon{
+        background-color: $ColorFondo;
+        border-radius: 20px;
+        width: 500px;
+        height: 500px;
+    }
 }
+
 @media screen and (max-width: 768px){
     body{
         article{

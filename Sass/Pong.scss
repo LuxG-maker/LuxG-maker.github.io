@@ -21,10 +21,8 @@ html{
         font: $FuenteTitulo;
         color: $ColorTitulo;
     }
-    canvas{
-        background-color: $ColorFondo;
-        display: block;
-        margin: 0 auto;
+    #canv{
+        text-align: center;
     }
     h6{
         display: none;

@@ -1,4 +1,4 @@
-@import '_Variables', '_Scroll', '_Reg';
+@import '_Variables', '_Scroll', '_Reg', '_Puntos';
 body{
     // text-align:center;
     font-size: 1,2em;
@@ -15,30 +15,91 @@ body{
         font: $FuenteTituloV;
         color: $ColorNormal;
     }
-    #dibujoahorcado{
-        margin-bottom: 20px;
-        #canvasahorcado{
-            width:320px;
-            height:250px;
+    #Puntos{
+        text-align: center;
+        color: black;
+        font: $FuenteTitulo;
+    }
+    .cajita{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        #Ocult{
+            display: flex;
+            justify-content: center;
+            #butt{
+                margin: auto;
+                color: #5E0B0B;
+                background-color: $ColorVariante;
+                width: 20%;
+                font: $FuenteTituloV;
+                height: 30px;
+                border: none;
+                border-radius: 30px;
+                transition: .5s;
+                &:hover{
+                    filter: blur(2px);
+                }
+                &:visited{
+                    display: none;
+                }
+            }
         }
-     }
-    #letras{
-        font-size: 3em;
-        text-align:center;
-        width: 320px;
-        //clear: both;
-        margin-bottom: 10px;
-        span{
-            width: 30px;
+        #dibujoahorcado{
+            margin-bottom: 20px;
+            #canvasahorcado{
+                width:320px;
+                height:250px;
+            }
+        }
+        #letras{
+            font-size: 3em;
             text-align:center;
-            padding-left: 5px;
+            width: 320px;
+            //clear: both;
+            margin-bottom: 10px;
+            span{
+                width: 30px;                    text-align:center;
+                padding-left: 5px;
+            }
+        }
+        #botonesletras{
+            width: 330px;
+            //clear: both;
         }
     }
-    #botonesletras{
-        width: 330px;
-        //clear: both;
+    .Titulo{
+        font: $FuenteTitulo;
+        color: $ColorTitulo;
     }
- }
+    .Texto{
+        font: $FuenteVariante;
+        color: $ColorNormal;
+    }
+    .swal2-styled.swal2-confirm{
+        font: $FuenteVariante;
+        color: $ColorTitulo;
+        background-color: $ColorFondoI;
+        background: $ColorFondoI;
+        border: none;
+    }
+    .swal2-select{
+        color: $ColorTitulo;
+        &:focus{
+            border: 3px solid $ColorAlert;
+            box-shadow: none;
+        }
+    }
+    .popFon{
+        background-color: $ColorFondo;
+        border-radius: 20px;
+        width: 500px;
+        height: 500px;
+    }
+}
 @media screen and (max-width:479px) {
     body{
         font-size: 0.8em;
