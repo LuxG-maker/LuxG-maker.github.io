@@ -1,12 +1,12 @@
 const contenedor = document.getElementById("test");
 const botonRes = document.getElementById("boton");
 const resultadoTest = document.getElementById("resultado");
-var img = ['../Multimedia/Logo.jpeg', '', '', ''];
+var img = "../Multimedia/Logo.jpeg";
 
 const preguntas = [
   {
     pregunta: "1. Como se clasifica la siguiente señal?",
-    im : img[0],
+    im : "../Multimedia/Logo.jpeg",
     respuestas: {
       a: "Señal informativa",
       b: "Señal preventiva",
@@ -16,95 +16,147 @@ const preguntas = [
     respuestaCorrecta: "b",
   },
   {
-    pregunta: "2. Cuál es la capital de Irak?",
+    pregunta: "2. ¿Cómo  se clasifica la siguiente señal?",
     im : img[1],
     respuestas: {
-      a: "Kuwait",
-      b: "Dubai",
-      c: "Bagdad",
-    },
-    respuestaCorrecta: "c",
-  },
-  {
-    pregunta: "3. Cuál es la capital de Noruega?",
-    im : img[2],
-    respuestas: {
-      a: "Roma",
-      b: "Copenague",
-      c: "Estocolmo",
-      d: "Oslo",
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
     },
     respuestaCorrecta: "d",
   },
   {
-    pregunta: "4. Cuál es la capital de Serbia?",
+    pregunta: "3. ¿cómo se clasifica la siguiente señal? ",
+    im : img[2],
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "b",
+  },
+  {
+    pregunta: "4. ¿cómo se clasifica la siguiente señal?",
     im : img[3],
     respuestas: {
-      a: "Belgrado",
-      b: "Zagreb",
-      c: "Kabul",
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "b",
+  },
+  {
+    pregunta: "5. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "d",
+  },
+  {
+    pregunta: "6. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
     },
     respuestaCorrecta: "a",
   },
   {
-    pregunta: "5. Cuál es la capital de Australia?",
-    im : img[4],
+    pregunta: "7. ¿cómo se clasifica la siguiente señal?",
     respuestas: {
-      a: "Sidney",
-      b: "Zurich",
-      c: "Canberra",
-    },
-    respuestaCorrecta: "c",
-  },
-  {
-    pregunta: "6. Cuál es la capital de Canadá?",
-    im : img[5],
-    respuestas: {
-      a: "Toronto",
-      b: "Montreal",
-      c: "Ontario",
-    },
-    respuestaCorrecta: "c",
-  },
-  {
-    pregunta: "7. Cuál es la capital de Vietnam?",
-    im : img[6],
-    respuestas: {
-      a: "Puket",
-      b: "Ho Chin Ming",
-      c: "Pan Lao Kung",
-    },
-    respuestaCorrecta: "b",
-  },
-  {
-    pregunta: "8. Cuál es la capital de China?",
-    im : img[7],
-    respuestas: {
-      a: "Shangai",
-      b: "Pekín",
-      c: "Seul",
-    },
-    respuestaCorrecta: "b",
-  },
-  {
-    pregunta: "9. Cuál es la capital de Pakistan?",
-    im : img[8],
-    respuestas: {
-      a: "Islamabad",
-      b: "Kuwait",
-      c: "Kabul",
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
     },
     respuestaCorrecta: "a",
   },
   {
-    pregunta: "10. Cuál es la capital de Marruecos?",
-    im : img[9],
+    pregunta: "8. ¿cómo se clasifica la siguiente señal?",
     respuestas: {
-      a: "Casablanca",
-      b: "Rabat",
-      c: "Kabul",
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "c",
+  },
+  {
+    pregunta: "9. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "a",
+  },
+  {
+    pregunta: "10. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "c",
+  },
+  {
+    pregunta: "11. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "c",
+  },
+  {
+    pregunta: "12. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "a",
+  },
+  {
+    pregunta: "13. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
     },
     respuestaCorrecta: "b",
+  },
+  {
+    pregunta: "14. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "c",
+  },
+  {
+    pregunta: "15. ¿cómo se clasifica la siguiente señal?",
+    respuestas: {
+      a: "Señal informativa",
+      b: "Señal preventiva",
+      c: "Señal reglamentaria",
+      d: "Señal transitoria",
+    },
+    respuestaCorrecta: "d",
   },
 ];
 
@@ -139,6 +191,7 @@ mostrarTest();
 function mostrarResultado() {
   const respuestas = contenedor.querySelectorAll(".respuestas");
   let respuestasCorrectas = 0;
+  let Nota = 0;
 
   preguntas.forEach((preguntaActual, numeroDePregunta) => {
     const todasLasRespuestas = respuestas[numeroDePregunta];
@@ -156,11 +209,13 @@ function mostrarResultado() {
     }
   });
 
+  Nota = respuestasCorrectas * 3.33;
+
   resultadoTest.innerHTML =
     "Usted ha acertado " +
     respuestasCorrectas +
     " preguntas de un total de " +
-    preguntas.length;
+    preguntas.length + " su nota es de: " + Math.round(Nota);
 }
 
 botonRes.addEventListener("click", mostrarResultado);

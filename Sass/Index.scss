@@ -1,5 +1,6 @@
 @import '_Variables', '_Scroll';
 .Contenedor{
+    transition: .6s;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);

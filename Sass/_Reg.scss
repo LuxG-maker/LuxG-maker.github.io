@@ -16,5 +16,11 @@
         background-color: $ColorTitulo;
         color: $ColorFondoI;
         }
+        &:focus-visible{
+            outline: none;
+        }
+    }
+    &:focus-visible{
+        outline: none;
     }
 }

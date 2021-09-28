@@ -20,13 +20,13 @@ html{
     }
     nav{
         width: 100%;
-        position: sticky;
         top: -1px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: $ColorFondoI;
         margin: 0px;
+        position: sticky;
         &:focus{
             outline: none;
         }
@@ -36,6 +36,7 @@ html{
             font: $FuenteTitulo;
             font-size: 30px;
             transition: .5s;
+            text-align: center;
             &:hover{
                 color: $ColorTitulo;
             }
@@ -114,17 +115,25 @@ html{
     .Contenedor{
         nav{
             flex-wrap: wrap;
+            top: -1px;
             a{
                 text-align: center;
                 width: 50%;
+                font-size: 19px;
             }
         }
         #Reg{
-            top: 170px;
+            top: 50px;
         }
         .Señales{
+            width: 98%;
             .Señal{
-                width: 80%;
+                width: 45%;
+                .Cont-h3{
+                    h3{
+                        font-size: 22px;
+                    }
+                }
                 p{
                     font-size: 25px;
                 }
@@ -142,7 +151,7 @@ html{
             }
         }
         #Reg{
-            top: 170px;
+            top: 100px;
         }
         .Intro{
             padding: 190px 10px;

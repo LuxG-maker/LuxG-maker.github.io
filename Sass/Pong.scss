@@ -1,6 +1,12 @@
 @import '_Variables', '_Scroll', '_Reg';
 html{
     background-color: $ColorFondo;
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -99;
+    }
     h1{
         text-align:center;
         font: $FuenteTitulo;

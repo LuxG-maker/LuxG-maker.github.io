@@ -1,5 +1,11 @@
 @import '_Variables', '_Scroll', '_Reg', '_Puntos';
 body{
+    #particles-js{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -99;
+    }
     h1{
         text-align: center;
         width: 80%;

@@ -21,49 +21,70 @@ body{
             text-align: center;
             font: $FuenteVariante;
             color: $ColorNormal;
+            font-size: 20px;
         }
     }
     .idea{
-        display: flex;
-        justify-content: space-between;
         width: 90%;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(0.5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "cuestion cuestion"
+                             "img cuestion";
         #test{
-            margin: auto;
-            width: 49%;
+            display: grid;
+            grid-area: cuestion;
+            margin: 0px auto;
             display: flex;
             justify-content: center;
             align-content: center;
             flex-direction: column;
             .cuestion{
+                grid-area: cuestion;
                 font: $FuenteTituloV;
                 color: $ColorAlert;
                 text-align: center;
-                margin: 70px 0px 50px 0px;
+                margin: 70px  0px 50px 0px;
             }
             .respuestas{
-                margin: auto;
-                align-items: center;
+                grid-area: obtions;
                 width: 50%;
+                margin: auto 10px auto auto;
                 display: flex;
-                justify-content: center;
+                align-items: left;
+                justify-content: left;
                 flex-flow: row wrap;
                 font: $FuenteVariante;
-                font-size: 20px;
+                font-size: 25px;
                 text-align: center;
                 line-height: 30px;
                 color: $ColorNormal;
+                padding-left: 60px;
                 label{
                     margin: 0px 20px;
                 }
             }
         }
         #image{
+            display: grid;
+            grid-area: img;
             display: flex;
-            justify-content: center;
-            width: 49%;
-            margin: auto;
-            img{
-                width: 300px;
+            justify-content: right;
+            flex-direction: column;
+            align-content: center;
+            width: 50%;
+            #foticos{
+                text-align: center;
+                width: 100%;
+                margin: auto;
+                padding-top: 150px;
+                img{
+                    padding: 20px;
+                    width: 45%;
+                    margin: auto;
+                }
             }
         }
     }
@@ -89,5 +110,37 @@ body{
         margin: auto;
         text-align: center;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        .idea{
+            #image{
+                width: 35%;
+                #foticos{
+                    margin: none;
+                    img{
+                        margin: 0px;
+                        width: 100%;
+                    }
+                }
+            }
+            #test{
+                .cuestion{
+                    font-size: 30px;
+                    width: 100% ;
+                }
+                .respuestas{
+                    padding: -25px;
+                    width: 65%;
+                    font-size: 22px;
+                }
+            }
+        }
+        #boton{
+            width: 100%;
+            font-size: 25px;
+        }
     }
 }
