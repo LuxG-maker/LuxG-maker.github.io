@@ -29,6 +29,10 @@ html{
     }
     #canv{
         text-align: center;
+        canvas{
+            width: 700px;
+            height: 500px;
+        }
     }
     h6{
         display: none;
@@ -53,14 +57,21 @@ html{
 }
 @media screen and (max-width: 768px){
     body{
-        canvas{
-            width: 0;
+        #canv{
+            z-index: -1000;
+            width: 0px;
+            height: 0px;
+            canvas{
+                width: 0px;
+                height: 0px;
+            }
         }
         button{
             display: none;
             width: 0;
         }
         h6{
+            z-index: 50;
             display: block;
         }
     }

@@ -1,5 +1,5 @@
 (function() {
-    var body = document.body;
+    /*var body = document.body;
     var loading = document.createElement('class');
     loading.className = 'loading';
     if (Stage._supported) {
@@ -8,7 +8,7 @@
     } else {
       loading.innerHTML = 'Please use a <a target="_blank" href="https://www.google.com/search?q=modern+browser">modern browser!';
       loading.style.zIndex = 0;
-    }
+    }*/
     body.insertBefore(loading, body.firstChild);
   })();
   

@@ -1,4 +1,6 @@
+@import '_Variables', '_Scroll', '_Reg';
 body {
+    background-color: $ColorFondo;
     font-family: sans-serif;
       overflow: hidden;
   }
@@ -54,5 +56,6 @@ body {
   
   .dark canvas {
       background: #222;
+      margin: auto;
   }
   
