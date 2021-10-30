@@ -4,7 +4,18 @@ body {
     font-family: sans-serif;
       overflow: hidden;
   }
-  
+h1{
+    text-align:center;
+    font: $FuenteTitulo;
+    color: $ColorTitulo;
+}
+h3{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font: $FuenteTituloV;
+    color: $ColorNormal;
+}
   .about,.hint {
       position: absolute;
       padding: 0.7em 1em;

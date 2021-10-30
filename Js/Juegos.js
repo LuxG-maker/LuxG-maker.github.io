@@ -83,7 +83,7 @@ function Ahorcado(){
                         if(estanTodas(aciertos,palabraEscogida)){
                            Swal.fire({
                               icon: 'success',
-                              title: 'Felicidades. has ganado, Si deseas puedes bolver a jugar',
+                              title: 'Felicidades. has ganado, Si deseas puedes volver a jugar',
                               text: '¡CAMPEON!',
                               customClass: {
                                  popup: 'popFon',

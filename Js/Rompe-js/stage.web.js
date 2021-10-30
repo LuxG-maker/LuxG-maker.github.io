@@ -3943,11 +3943,11 @@ function AppLoader(app, configs) {
     if (full) {
       // screen.availWidth/Height?
       width = (window.innerWidth > 0 ? window.innerWidth : screen.width);
-      height = (500);
+      height = (window.innerHeight > 0 ? window.innerHeight : screen.height);
 
       canvas.style.width = width + 'px';
       canvas.style.height = height + 'px';
-      canvas.style.margin = '350px 0px 0px 0px';
+      canvas.style.margin = '350px 0px 200px 0px';
 
     } else {
       width = canvas.clientWidth;
