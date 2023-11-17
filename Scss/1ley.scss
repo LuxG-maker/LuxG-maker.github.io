@@ -1,0 +1,116 @@
+@import '_Variables';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $ClrFondo;
+    nav{
+        display: flex;
+        width: 100%;
+        height: 126px;
+        .icono{
+            display: flex;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 80px;
+                margin: 0px 0% 0px 5%;
+            }
+            h6{
+                display: flex;
+                align-items: center;
+                text-align: right;
+                font: $FntTitle;
+                color: aliceblue;
+            }
+
+        }
+        .mapa { 
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                font: $FntTexto;
+                color: $ClrTexto;
+            }
+            .botton{
+                display: flex;
+                background-color: $ClrTitle;
+                width: 10%;
+                height: 50%;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                border: 2px solid $ClrTexto;
+                &:hover{
+                    border: 2px solid $ClrTitle;
+                    background-color: $ClrTexto;
+                    transition: .4s;
+                    color: $ClrTitle;
+                }
+            }
+        }
+    }
+    section{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        article{
+            width: 50%;
+            h1{
+                font: $FntTexto;
+                font-size: 30px;
+                color: $ClrTitle;
+                margin: 25px;
+            }
+            h3{
+                font: $FntTitle;
+                color: $ClrVari2;
+                margin: 10px;
+            }
+            p{
+                font: $FntVaria;
+                color: $ClrTexto;
+                font-style: oblique;
+            }
+        }
+        div{
+            width: 50%;
+            background-color: $ClrVari2;
+            border-radius: 20px;
+            margin: 0px 20px;
+        }
+    }
+    aside{
+        width: 100%;
+        height: 600px;
+        margin: 150px 0px;
+        background-color: $ClrTitle;
+        h1{
+            font: $FntTexto;
+            font-size: 30px;
+            color: $ClrFondo;
+            height: 100px;
+            margin: 40px 40px 20px 40px;
+            display: flex;
+            align-items: center;
+        }
+        div{
+            text-align: center;
+            margin: 25px;
+        }
+        p{
+            width: 60%;
+            margin: auto;
+            font: $FntVaria;
+            color: $ClrFondo;
+            font-size: 20px;
+        }
+    }
+}
